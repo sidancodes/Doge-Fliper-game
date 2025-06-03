@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doge Flip</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/win1.gif"  type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <h1>Doge Fliper Game</h1>
+        <div class="stats">
+            <div class="moves">Moves: <span id="moves">0</span></div>
+            <div class="timer">Time: <span id="time">00:00</span></div>
+        </div>
+        <div class="game-container">
+            <div class="game-board" id="game-board"></div>
+        </div>
+        <button id="restart">Restart Game</button>
+    </div>
+    <div class="gif-popup" id="gif-popup" style="display:none;">
+        <img id="gif-popup-img" src="" alt="Wrong Match" />
+    </div>
+    <div class="gif-popup" id="win-gif-popup" style="display:none;">
+        <img id="win-gif-popup-img" src="images/win1.gif" alt="You Win!" />
+    </div>
+    <div class="watermark">created by sidancodes</div>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
