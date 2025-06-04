@@ -52,6 +52,15 @@ const gifPopupImg = document.getElementById('gif-popup-img');
 const winGifPopup = document.getElementById('win-gif-popup');
 const winGifPopupImg = document.getElementById('win-gif-popup-img');
 
+// Preload images
+function preloadImages() {
+    const allImages = [...images, ...wrongGifs, ...winGifs];
+    allImages.forEach(src => {
+        const img = new Image();
+        img.src = src;
+    });
+}
+
 // Initialize the game
 function initGame() {
     // Reset game variables
@@ -76,12 +85,15 @@ function initGame() {
         gameBoard.appendChild(card);
         cards.push(card);
     });
+
+    // Preload images
+    preloadImages();
 }
 
 // Create a card element
 function createCard(image, index) {
     const card = document.createElement('div');
-    card.className = 'card';
+    card.className = 'card no-select';
     card.dataset.index = index;
     
     const cardFront = document.createElement('div');
@@ -93,11 +105,19 @@ function createCard(image, index) {
     const img = document.createElement('img');
     img.src = image;
     img.alt = 'Card';
+    img.loading = 'eager'; // Force immediate loading
     cardBack.appendChild(img);
     
     card.appendChild(cardFront);
     card.appendChild(cardBack);
     
+    // Use touchstart for mobile devices
+    card.addEventListener('touchstart', (e) => {
+        e.preventDefault(); // Prevent double-tap zoom
+        flipCard(card);
+    }, { passive: false });
+    
+    // Keep click for desktop
     card.addEventListener('click', () => flipCard(card));
     
     return card;
