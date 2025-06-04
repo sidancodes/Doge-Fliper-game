@@ -1,23 +1,36 @@
-// Game images (you can replace these with your own images)
+// Game images
 const images = [
-    'images/card1.jpg', 'images/card2.jpg', 'images/card3.jpg', 'images/card4.jpg',
-    'images/card5.jpg', 'images/card6.jpg', 'images/card7.jpg', 'images/card8.jpg',
-    'images/card1.jpg', 'images/card2.jpg', 'images/card3.jpg', 'images/card4.jpg',
-    'images/card5.jpg', 'images/card6.jpg', 'images/card7.jpg', 'images/card8.jpg'
+    'https://t4.ftcdn.net/jpg/05/84/79/77/240_F_584797754_ioWO23lWL5Rxa1yJS81wz1osLgaPoLOi.webp',
+    'https://t4.ftcdn.net/jpg/05/45/58/65/240_F_545586510_PnVBWbzyo1OSUTK47TwVvVXFAwdawkxn.jpg',
+    'https://t3.ftcdn.net/jpg/05/64/83/20/240_F_564832021_BReUmPUDsFpYsAcFZFFfX5TieC8EPKrM.webp',
+    'https://t3.ftcdn.net/jpg/05/56/06/44/240_F_556064488_JilZYUA1CWOG8OwZ7lRC8mMaUUs2BdKp.webp',
+    'https://t3.ftcdn.net/jpg/06/33/86/86/240_F_633868669_jNPpLRc4xT7PbZ02nFOUu8GNjSRONzco.webp',
+    'https://t4.ftcdn.net/jpg/05/84/91/67/240_F_584916761_kGoQDUec1CfxI4gq5SvskUGivoWZP0YK.webp',
+    'https://t3.ftcdn.net/jpg/06/22/88/96/240_F_622889648_wMsxudUj3zMCbIqYG4l74q2AO8IHtCGT.jpg',
+    'https://t4.ftcdn.net/jpg/05/65/13/61/240_F_565136198_5mOWYZz8zsj5ot9LAxwlF9i3x3SVdpOj.jpg',
+    // Duplicate the images for matching pairs
+    'https://t4.ftcdn.net/jpg/05/84/79/77/240_F_584797754_ioWO23lWL5Rxa1yJS81wz1osLgaPoLOi.webp',
+    'https://t4.ftcdn.net/jpg/05/45/58/65/240_F_545586510_PnVBWbzyo1OSUTK47TwVvVXFAwdawkxn.jpg',
+    'https://t3.ftcdn.net/jpg/05/64/83/20/240_F_564832021_BReUmPUDsFpYsAcFZFFfX5TieC8EPKrM.webp',
+    'https://t3.ftcdn.net/jpg/05/56/06/44/240_F_556064488_JilZYUA1CWOG8OwZ7lRC8mMaUUs2BdKp.webp',
+    'https://t3.ftcdn.net/jpg/06/33/86/86/240_F_633868669_jNPpLRc4xT7PbZ02nFOUu8GNjSRONzco.webp',
+    'https://t4.ftcdn.net/jpg/05/84/91/67/240_F_584916761_kGoQDUec1CfxI4gq5SvskUGivoWZP0YK.webp',
+    'https://t3.ftcdn.net/jpg/06/22/88/96/240_F_622889648_wMsxudUj3zMCbIqYG4l74q2AO8IHtCGT.jpg',
+    'https://t4.ftcdn.net/jpg/05/65/13/61/240_F_565136198_5mOWYZz8zsj5ot9LAxwlF9i3x3SVdpOj.jpg'
 ];
 
 const wrongGifs = [
-    'images/wrong1.gif',
-    'images/wrong2.gif',
-    'images/wrong3.gif',
-    'images/wrong4.gif',
-    'images/wrong5.gif'
+    'https://media.tenor.com/nYtu_y3iFWwAAAAi/doge.gif',
+    'https://media.tenor.com/FrUFy1DveuIAAAAi/bonk-doge.gif',
+    'https://media.tenor.com/o9sXuSI4M34AAAAi/kek-dog.gif',
+    'https://media.tenor.com/aaREt24LEoIAAAAi/i-will-shoot.gif',
+    'https://media1.tenor.com/m/J7FOSZsIKN4AAAAd/doge-doge-coin.gif'
 ];
 
 const winGifs = [
-    'images/win1.gif',
-    'images/win2.gif',
-    'images/win3.gif'
+    'https://media.tenor.com/kAQlH5am9jwAAAAi/spookyposting-halloween.gif',
+    'https://media.tenor.com/kAQlH5am9jwAAAAi/spookyposting-halloween.gif',
+    'https://media.tenor.com/kAQlH5am9jwAAAAi/spookyposting-halloween.gif'
 ];
 
 // Game variables
